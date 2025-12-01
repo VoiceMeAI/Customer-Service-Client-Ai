@@ -1,0 +1,9 @@
+{
+  "/(dashboard)/page": "/",
+  "/_not-found/page": "/_not-found",
+  "/auth/login/page": "/auth/login",
+  "/dashboard/page": "/dashboard",
+  "/favicon.ico/route": "/favicon.ico",
+  "/landing-page/page": "/landing-page",
+  "/playground/page": "/playground"
+}

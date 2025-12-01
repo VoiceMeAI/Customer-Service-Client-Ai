@@ -1,0 +1,3 @@
+module.exports=[58214,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(9961);a.n(d("[project]/csa-client-frontend/node_modules/next/dist/client/app-dir/link.js <module evaluation>"))},57424,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(9961);a.n(d("[project]/csa-client-frontend/node_modules/next/dist/client/app-dir/link.js"))},76553,a=>{"use strict";a.i(58214);var b=a.i(57424);a.n(b)},3282,a=>{"use strict";a.s(["default",()=>d]);var b=a.i(23176),c=a.i(76553);function d(){return(0,b.jsxs)("div",{children:[(0,b.jsx)("h1",{children:"404 - Page Not Found"}),(0,b.jsx)("p",{children:"The page you are looking for does not exist."}),(0,b.jsx)(c.default,{href:"/",children:"Go back to the home page"})]})}}];
+
+//# sourceMappingURL=csa-client-frontend_44a67d9b._.js.map

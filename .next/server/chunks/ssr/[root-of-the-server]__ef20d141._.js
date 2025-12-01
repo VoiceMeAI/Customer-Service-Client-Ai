@@ -1,0 +1,3 @@
+module.exports=[93695,(a,b,c)=>{b.exports=a.x("next/dist/shared/lib/no-fallback-error.external.js",()=>require("next/dist/shared/lib/no-fallback-error.external.js"))},28636,a=>{a.n(a.i(90616))},80663,(a,b,c)=>{},30213,a=>{"use strict";a.s(["default",()=>d]);var b=a.i(23176),c=a.i(76553);function d(){return(0,b.jsxs)("div",{children:[(0,b.jsx)("h1",{className:"font text-4xl",children:"Welcome to CSA Portal"}),(0,b.jsx)(c.default,{href:"/playground",className:"underline",children:"Check Playground for More Info about the set up"})]})}}];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__ef20d141._.js.map

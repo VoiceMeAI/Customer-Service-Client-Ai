@@ -1,0 +1,3 @@
+module.exports=[58615,a=>{"use strict";a.s(["default",()=>e],58615);var b=a.i(23176);function c(){return(0,b.jsx)("div",{className:"mt-5 space-x-0 bg-red-50 pb-2",children:"Footer"})}function d(){return(0,b.jsx)("div",{children:"Header"})}function e({children:a}){return(0,b.jsxs)("div",{children:[(0,b.jsx)(d,{}),(0,b.jsx)("main",{children:a}),(0,b.jsx)(c,{})]})}}];
+
+//# sourceMappingURL=csa-client-frontend_src_app_landing-page_layout_tsx_b5b7009b._.js.map

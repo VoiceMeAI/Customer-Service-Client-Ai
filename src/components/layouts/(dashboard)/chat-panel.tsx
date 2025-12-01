@@ -41,8 +41,19 @@ import {
 import { useRef, useEffect, useState, useCallback } from "react";
 import { toast } from "sonner";
 
+// Message type definition
+interface Message {
+  id: string;
+  content: string;
+  sender: "user" | "ai" | "staff";
+  senderName: string;
+  timestamp: string;
+  status?: "sent" | "delivered" | "read";
+  isEscalation?: boolean;
+}
+
 // Dummy message data
-const initialMessages = [
+const initialMessages: Message[] = [
   {
     id: "1",
     content:
@@ -50,7 +61,7 @@ const initialMessages = [
     sender: "user",
     senderName: "Sarah Johnson",
     timestamp: "10:23 AM",
-    status: "read" as const,
+    status: "read",
   },
   {
     id: "2",
@@ -67,7 +78,7 @@ const initialMessages = [
     sender: "user",
     senderName: "Sarah Johnson",
     timestamp: "10:24 AM",
-    status: "read" as const,
+    status: "read",
   },
   {
     id: "4",
@@ -92,7 +103,7 @@ const initialMessages = [
     sender: "user",
     senderName: "Sarah Johnson",
     timestamp: "10:26 AM",
-    status: "read" as const,
+    status: "read",
   },
   {
     id: "7",
@@ -110,7 +121,7 @@ const initialMessages = [
     sender: "staff",
     senderName: "John Doe",
     timestamp: "10:27 AM",
-    status: "delivered" as const,
+    status: "delivered",
   },
 ];
 
@@ -227,7 +238,7 @@ export function ChatPanel() {
     if (!message.trim() || isSending) return;
 
     setIsSending(true);
-    const newMessage = {
+    const newMessage: Message = {
       id: String(messages.length + 1),
       content: message.trim(),
       sender: "staff",
@@ -237,7 +248,7 @@ export function ChatPanel() {
         minute: "2-digit",
         hour12: true,
       }),
-      status: "sent" as const,
+      status: "sent",
     };
 
     setMessages((prev) => [...prev, newMessage]);
@@ -248,7 +259,7 @@ export function ChatPanel() {
     setTimeout(() => {
       setMessages((prev) =>
         prev.map((m) =>
-          m.id === newMessage.id ? { ...m, status: "delivered" as const } : m
+          m.id === newMessage.id ? { ...m, status: "delivered" as Message["status"] } : m
         )
       );
       setIsSending(false);

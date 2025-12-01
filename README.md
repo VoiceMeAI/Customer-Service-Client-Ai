@@ -41,7 +41,7 @@ CSA Client Frontend is the agent-facing dashboard for a customer support platfor
 ### Prerequisites
 
 - Node.js 18+ 
-- pnpm (recommended) or npm
+- npm
 
 ### Installation
 
@@ -51,10 +51,10 @@ git clone <repository-url>
 cd csa-client-frontend
 
 # Install dependencies
-pnpm install
+npm install
 
 # Start development server
-pnpm dev
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) to view the application.
@@ -63,13 +63,13 @@ Open [http://localhost:3000](http://localhost:3000) to view the application.
 
 | Command | Description |
 |---------|-------------|
-| `pnpm dev` | Start development server with Turbopack |
-| `pnpm build` | Build for production |
-| `pnpm start` | Start production server |
-| `pnpm lint` | Run ESLint |
-| `pnpm lint:fix` | Fix ESLint errors |
-| `pnpm format` | Format code with Prettier |
-| `pnpm format:check` | Check code formatting |
+| `npm run dev` | Start development server with Turbopack |
+| `npm run build` | Build for production |
+| `npm run start` | Start production server |
+| `npm run lint` | Run ESLint |
+| `npm run lint:fix` | Fix ESLint errors |
+| `npm run format` | Format code with Prettier |
+| `npm run format:check` | Check code formatting |
 
 ## Project Structure
 
@@ -180,7 +180,7 @@ For development/demo purposes:
 - ESLint + Prettier for code formatting
 - TypeScript strict mode enabled
 - Tailwind CSS for styling (follow existing patterns)
-- Run `pnpm lint` before committing
+- Run `npm run lint` before committing
 
 ## License
 
