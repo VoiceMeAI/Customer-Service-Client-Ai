@@ -1,0 +1,110 @@
+export default function AuthLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="min-h-svh flex">
+      {/* Left Side - Branding */}
+      <div className="hidden lg:flex lg:w-1/2 xl:w-[55%] bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-[0.03]">
+          <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern
+                id="grid"
+                width="40"
+                height="40"
+                patternUnits="userSpaceOnUse"
+              >
+                <path
+                  d="M 40 0 L 0 0 0 40"
+                  fill="none"
+                  stroke="white"
+                  strokeWidth="1"
+                />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grid)" />
+          </svg>
+        </div>
+
+        {/* Gradient Orbs */}
+        <div className="absolute top-1/4 -left-20 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 right-0 w-80 h-80 bg-teal-500/20 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl" />
+
+        {/* Content */}
+        <div className="relative z-10 flex flex-col justify-between p-12 w-full">
+          {/* Logo */}
+          <div className="flex items-center gap-3">
+            <div className="size-10 rounded-xl bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center shadow-lg shadow-emerald-500/25">
+              <svg
+                className="size-5 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+                />
+              </svg>
+            </div>
+            <span className="text-xl font-bold text-white tracking-tight">
+              CSA Portal
+            </span>
+          </div>
+
+          {/* Main Content */}
+          <div className="max-w-md">
+            <h1 className="text-4xl xl:text-5xl font-bold text-white leading-tight">
+              Empower your
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">
+                customer support
+              </span>
+              with AI
+            </h1>
+            <p className="mt-6 text-lg text-slate-400 leading-relaxed">
+              Access your agent dashboard to manage conversations, collaborate
+              with AI, and deliver exceptional customer experiences.
+            </p>
+
+            {/* Stats */}
+            <div className="mt-10 grid grid-cols-3 gap-6">
+              <div>
+                <p className="text-3xl font-bold text-white">98%</p>
+                <p className="text-sm text-slate-500 mt-1">
+                  Customer Satisfaction
+                </p>
+              </div>
+              <div>
+                <p className="text-3xl font-bold text-white">2.5x</p>
+                <p className="text-sm text-slate-500 mt-1">Faster Resolution</p>
+              </div>
+              <div>
+                <p className="text-3xl font-bold text-white">24/7</p>
+                <p className="text-sm text-slate-500 mt-1">AI Assistance</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Footer */}
+          <div className="flex items-center gap-2 text-sm text-slate-500">
+            <span>© 2024 CSA Portal.</span>
+            <span>•</span>
+            <span>Powered by AI</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Right Side - Form */}
+      <div className="flex-1 flex items-center justify-center p-6 sm:p-12 bg-background">
+        <div className="w-full max-w-md">{children}</div>
+      </div>
+    </div>
+  );
+}
+

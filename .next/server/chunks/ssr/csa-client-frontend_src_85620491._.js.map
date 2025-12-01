@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///home/habeeb/CSA/csa-client-frontend/src/components/layouts/%28landing-page%29/footer.tsx"],"sourcesContent":["export default function Footer() {\n  return <div className=\"mt-5 space-x-0 bg-red-50 pb-2\">Footer</div>;\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBAAO,2QAAC;QAAI,WAAU;kBAAgC;;;;;;AACxD","debugId":null}},
+    {"offset": {"line": 24, "column": 0}, "map": {"version":3,"sources":["file:///home/habeeb/CSA/csa-client-frontend/src/components/layouts/%28landing-page%29/header.tsx"],"sourcesContent":["export default function Header() {\n  return <div>Header</div>;\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBAAO,2QAAC;kBAAI;;;;;;AACd","debugId":null}},
+    {"offset": {"line": 43, "column": 0}, "map": {"version":3,"sources":["file:///home/habeeb/CSA/csa-client-frontend/src/app/%28landing-page%29/layout.tsx"],"sourcesContent":["import Footer from \"@/components/layouts/(landing-page)/footer\";\nimport Header from \"@/components/layouts/(landing-page)/header\";\n\nexport default function Layout({ children }: { children: React.ReactNode }) {\n  return (\n    <div>\n      {/* HEADER */}\n      <Header />\n\n      <main>{children}</main>\n\n      {/* FOOTER */}\n\n      <Footer />\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;AAAA;AACA;;;;AAEe,SAAS,OAAO,EAAE,QAAQ,EAAiC;IACxE,qBACE,2QAAC;;0BAEC,2QAAC,sMAAM;;;;;0BAEP,2QAAC;0BAAM;;;;;;0BAIP,2QAAC,sMAAM;;;;;;;;;;;AAGb","debugId":null}}]
+}
